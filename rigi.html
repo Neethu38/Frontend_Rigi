@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Title Here</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .button-container {
+    margin-right: 20px;
+  }
+  .button {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  .blue-block {
+    background-color: blue;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blue-block img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 40px;
+  }
+  .blue-block-text {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blue-block-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .blue-block-paragraph {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .capsule-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    align-self: flex-start;
+  }
+  .white-block-paragraph {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .small-image {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .capsule-c {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: white;
+    color: black;
+    font-weight: lighter;
+    font-size: smaller;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .white-block {
+    background-color: #C6E6E1;
+    padding: 40px;
+    text-align: center;
+  }
+  .centered-paragraph {
+    font-size: 8px;
+    text-align: center;
+    color: black;
+  }
+  .black-text {
+    color: black;
+  }
+  .blue-text {
+    color: blue;
+  }
+  .type1 {
+    font-size: 32px;
+  }
+  .type2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .inline-headers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .inline-headers h1,
+  .inline-headers h2 {
+    margin: 0 20px;
+  }
+  .split-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #C6E6E1; /* Same background color as the previous block */
+  }
+  .split-image {
+    max-width: 50%;
+    height: auto;
+  }
+  .text-section {
+    max-width: 50%;
+    padding-right: 20px; /* Add space between text and image */
+  }
+  .small-font {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .bullet-points {
+    list-style: none;
+    padding: 0;
+  }
+  .bullet-points li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .bullet {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px; /* Increase the font size for a larger bullet */
+    color: black;
+  }
+  .bullet-tick {
+    position: absolute;
+    left: 4px; /* Adjust the positioning */
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* White tick mark */
+  }
+  .blue-capsule-button {
+    background-color: blue;
+    color: white;
+  }
+  .inline-block-container {
+    display: flex;
+    justify-content: center; /* Center align the blocks */
+    gap: 10px; /* Minimal spacing between blocks */
+    margin-top: 40px;
+  }
+  .course-block {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 300px; /* Restrict the width */
+    box-sizing: border-box;
+  }
+  .course-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .course-header {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .course-paragraph {
+    margin: 10px 0;
+  }
+  .buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+<
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Logo</div>
+    <div class="button-container">
+      <a href="#" class="button">Job Community</a>
+      <a href="#" class="button">Contact Us</a>
+    </div>
+  </div>
+  <div class="blue-block">
+    <div class="blue-block-text">
+      <div class="blue-block-header">Hack your wealth journey inside the 1% club</div>
+      <p class="blue-block-paragraph">A super premium annual subscription that will transform your wealth planning and make you say</p>
+      <a href="#" class="capsule-button">Join the community</a>
+    </div>
+    <img src="./anoop.jpg" alt="Anoop">
+  </div>
+  <div class="white-block">
+    <br><br><br>
+    <p class="white-block-paragraph">Featured in</p>
+    <div class="inline-headers">
+      <h2 class="blue-text type2">Forbes</h2>
+      <h2 class="blue-text type1">THE ECONOMIC TIMES</h2>
+      <h2 class="blue-text type2">Mint</h2>
+    </div>
+    <div class="inline-headers">
+      <h1 class="blue-text type1">THE TIMES OF INDIA</h1>
+      <h2 class="blue-text type2">Forbes</h2>
+    </div>
+    <br><br><br>
+    <p class="white-block-paragraph">About me</p>
+    <h2>Entrepreneur, content creator, Finance Influencer</h2>
+    <img src="./anoop1.jpg" alt="Anoop1" class="small-image">
+    <h5 class="centered-paragraph">Hi, I'm Finance With Sharan. I’m a former management consultant at KPMG and PwC where I worked with banks and NBFCs to help them make a ton of money.</h5>
+    <h5 class="centered-paragraph">I now work as a full-time content creator and help the common man make a ton of money.</h5>
+    <h5 class="centered-paragraph">I create engaging personal finance content with a blend of comedic flavor and cosplay on Instagram and YouTube. I also write down highly action-oriented posts on LinkedIn and Twitter for those who are not on social media platforms and prefer to read it instead.</h5>
+    <p class="centered-paragraph">
+      <a href="https://www.instagram.com/your_username">
+        <img src="./instagram.jpg" alt="Instagram" width="20" height="20" style="margin-right: 10px;">
+      </a>
+      <a href="https://www.facebook.com/your_username">
+        <img src="./facebook.jpg" alt="Facebook" width="20" height="20" style="margin-right: 10px;">
+      </a>
+      <a href="https://www.linkedin.com/in/your_username">
+        <img src="linkedin.png" alt="LinkedIn" width="20" height="20" style="margin-right: 10px;">
+      </a>
+      <a href="https://www.twitter.com/your_username">
+        <img src="twitter logo.png" alt="Twitter" width="20" height="20" style="margin-right: 10px;">
+      </a>
+      <a href="https://www.youtube.com/your_channel">
+        <img src="./youtube.png" alt="YouTube" width="20" height="20" style="margin-right: 10px;">
+      </a>
+    </p>
+    <br><br><br>
+    <h6 style="margin-bottom: 5px;">Services</h6>
+    <h3 style="margin-top: 5px;">Start your journey towards financial freedom</h3>
+    <a href="#" class="capsule-button capsule-c blue-capsule-button">Community</a>
+    <a href="#" class="capsule-button capsule-c">Courses</a>
+    <a href="#" class="capsule-button capsule-c">Consultation</a>
+    <div class="split-block">
+      <div class="text-section">
+        <h2 style="margin-top: 0; margin-bottom: 10px;">The 1% Club</h2>
+        <p class="small-font">Now, I'm on a mission to help you get to the RICHEST 1% - one educational finance content at a time.</p>
+        <ul class="bullet-points">
+          <li style="display: flex; align-items: center;"><span class="bullet">&#9679;</span> <span class="bullet-tick">&#10003;</span><span style="margin-left: 10px;">Exclusive 1 on 1 interaction with the creator</span></li>
+          <li style="display: flex; align-items: center;"><span class="bullet">&#9679;</span> <span class="bullet-tick">&#10003;</span><span style="margin-left: 10px;">Connect with like minded folks, from diverse backgrounds & cities</span></li>
+          <li style="display: flex; align-items: center;"><span class="bullet">&#9679;</span> <span class="bullet-tick">&#10003;</span><span style="margin-left: 10px;">32+ Hours of Investing Tutorials, Tools & Community</span></li>
+        </ul>
+        <a href="#" class="capsule-button blue-capsule-button" style="display: block; margin-top: 50px; margin-left: auto; margin-right: 200px;">Join the Community</a>
+      </div>
+      <img src="./anoop.jpg" alt="Anoop" class="split-image">
+    </div>
+    <a href="#" class="capsule-button capsule-c">Community</a>
+    <a href="#" class="capsule-button capsule-c blue-capsule-button">Courses</a>
+    <a href="#" class="capsule-button capsule-c">Consultation</a>
+ <div class="inline-block-container">
+    <div class="course-block">
+      <img src="course.jpg" alt="Course" class="course-image">
+      <div class="course-header">The 1% Course</div>
+      <p class="course-paragraph">Now, I'm on a mission to help you get to the RICHEST 1% - one educational finance content at a time.</p>
+      <a href="#" class="buy-button">Buy the course @ ₹3,999</a>
+    </div>
+    <div class="course-block">
+      <img src="course.jpg" alt="Course" class="course-image">
+      <div class="course-header">The 1% Course</div>
+      <p class="course-paragraph">Now, I'm on a mission to help you get to the RICHEST 1% - one educational finance content at a time.</p>
+      <a href="#" class="buy-button">Buy the course @ ₹3,999</a>
+    </div>
+    <div class="course-block">
+      <img src="course.jpg" alt="Course" class="course-image">
+      <div class="course-header">The 1% Course</div>
+      <p class="course-paragraph">Now, I'm on a mission to help you get to the RICHEST 1% - one educational finance content at a time.</p>
+      <a href="#" class="buy-button">Buy the course @ ₹3,999</a>
+    </div>
+    </div>
+    <br><br><br>
+    <a href="#" class="capsule-button capsule-c">Community</a>
+    <a href="#" class="capsule-button capsule-c">Courses</a>
+    <a href="#" class="capsule-button capsule-c blue-capsule-button">Consultation</a>
+  </div>
+</body>
+</html>
